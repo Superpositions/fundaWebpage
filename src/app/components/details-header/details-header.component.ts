@@ -10,6 +10,7 @@ export class DetailsHeaderComponent implements OnInit {
   @Input() postalNumber;
   @Input() place;
   @Input() price;
+  @Input() priceAbbrivation;
   constructor() { }
 
   ngOnInit() {
