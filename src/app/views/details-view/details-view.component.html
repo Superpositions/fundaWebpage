@@ -1,7 +1,8 @@
 <div *ngIf="!errorMessage">
   <app-details-header [streetName]="propertyDetails?.Adres"
                       [postalNumber]="propertyDetails?.Postcode"
-                      [place]="propertyDetails?.Plaats"></app-details-header>
+                      [place]="propertyDetails?.Plaats"
+                      [price]="propertyDetails?.KoopPrijs"></app-details-header>
   <!-- {{propertyDetails | json}} -->
 </div>
 
