@@ -1,5 +1,5 @@
 <header fxLayout.xs="column" fxLayout="row" fxLayoutAlign="center center">
-    <nav role="navigation" fxLayout="row" fxLayoutAlign="space-between center">
+    <nav class="desktop-nav" role="navigation" fxLayout="row" fxLayoutAlign="space-between center">
         <img src="https://assets.fstatic.nl/master_1293/assets/components/logo/fundawonen-logo.svg" alt="funda-logo" class="logo">
         <ul class="desktop-view" fxLayout="row" fxShow.xs="false" fxShow="true">
             <li><a href="#">Inloggen</a></li>
@@ -10,7 +10,7 @@
             <i class="material-icons menu-icon">menu</i>
         </div>
     </nav>
-    <nav [hidden]="isMobileNavVisible"> 
+    <nav class="mobile-nav" [hidden]="isMobileNavVisible"> 
         <ul class="mobile-view">
             <li><a href="#">Inloggen</a></li>
             <li><a href="#">Registreren</a></li>
