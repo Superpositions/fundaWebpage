@@ -1,10 +1,7 @@
 <div *ngIf="!errorMessage">
-  <app-details-header [streetName]="propertyDetails?.Adres"
-                      [postalNumber]="propertyDetails?.Postcode"
-                      [place]="propertyDetails?.Plaats"
-                      [price]="propertyDetails?.KoopPrijs"
-                      [priceAbbrivation]="propertyDetails?.Prijs.KoopAbbreviation"></app-details-header>
-  <!-- {{propertyDetails | json}} -->
+  <app-details-header [streetName]="propertyDetails?.Adres" [postalNumber]="propertyDetails?.Postcode" [place]="propertyDetails?.Plaats"
+    [price]="propertyDetails?.KoopPrijs" [priceAbbrivation]="propertyDetails?.Prijs.KoopAbbreviation"></app-details-header>
+  <app-carousel [media]="mediaMedium"></app-carousel>
 </div>
 
 <div class="errorMessage" *ngIf="errorMessage">

@@ -8,20 +8,27 @@ import { DataService } from '../../services/data.service';
 })
 export class DetailsViewComponent implements OnInit {
   errorMessage: any;
-  media: any;
+  mediaMedium = [];
+  mediaLarge = [];
   propertyDetails: any;
-
+  
   constructor(public dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.loadDetails().subscribe(
       details => {
         this.propertyDetails = details;
-        this.media = this.propertyDetails.Media;
+        this.propertyDetails.Media.map(item => {
+          if(item.MediaItems[item.MediaItems.length-2]){
+            // Collect medium size images for displaying in carousel
+            this.mediaMedium.push(item.MediaItems[item.MediaItems.length-2].Url);
+          }
+        });
+        
       },
       error => {
         // Displaying Error to user, improving UX
-        this.errorMessage = 'There seems to be an error ' +  error.statusText + ', with error status ' + error.status;
+        this.errorMessage = 'There seems to be an error ' + error.statusText + ', with error status ' + error.status;
         // Logging error for debug purposes
         console.error('Error ', error);
       }

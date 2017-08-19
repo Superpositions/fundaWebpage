@@ -9,19 +9,23 @@ import { DetailsViewComponent } from './views/details-view/details-view.componen
 import { DataService } from './services/data.service';
 import { HeaderComponent } from './components/header/header.component';
 import { DetailsHeaderComponent } from './components/details-header/details-header.component';
+import { SwiperModule } from 'angular2-useful-swiper';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DetailsViewComponent,
     HeaderComponent,
-    DetailsHeaderComponent
+    DetailsHeaderComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    SwiperModule
   ],
   providers: [
     DataService
