@@ -11,6 +11,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { DetailsHeaderComponent } from './components/details-header/details-header.component';
 import { SwiperModule } from 'angular2-useful-swiper';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { AgmCoreModule } from '@agm/core';
+
+import { CONSTANTS } from '../environments/constants';
+import { GmapComponent } from './components/gmap/gmap.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +22,18 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     DetailsViewComponent,
     HeaderComponent,
     DetailsHeaderComponent,
-    CarouselComponent
+    CarouselComponent,
+    GmapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
     FlexLayoutModule,
-    SwiperModule
+    SwiperModule,
+    AgmCoreModule.forRoot({
+      apiKey: CONSTANTS.GMAPS_KEY
+    })
   ],
   providers: [
     DataService

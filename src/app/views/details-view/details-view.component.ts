@@ -7,17 +7,20 @@ import { DataService } from '../../services/data.service';
   styleUrls: ['./details-view.component.scss']
 })
 export class DetailsViewComponent implements OnInit {
+  lng: any;
+  lat: any;
   errorMessage: any;
   mediaMedium = [];
   mediaLarge = [];
   propertyDetails: any;
-  
   constructor(public dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.loadDetails().subscribe(
       details => {
         this.propertyDetails = details;
+        this.lng = details.WGS84_X;
+        this.lat = details.WGS84_Y;
         this.propertyDetails.Media.map(item => {
           if(item.MediaItems[item.MediaItems.length-2]){
             // Collect medium size images for displaying in carousel
