@@ -1,4 +1,6 @@
+@import '../../shared/_colors';
+
 .errorMessage{
     font-size: 18px;
-    color: red;
+    color: $red;
 }

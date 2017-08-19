@@ -23,7 +23,7 @@ export class DetailsViewComponent implements OnInit {
         // Displaying Error to user, improving UX
         this.errorMessage = 'There seems to be an error ' +  error.statusText + ', with error status ' + error.status;
         // Logging error for debug purposes
-        console.error('Error ', error) 
+        console.error('Error ', error);
       }
     );
   }

@@ -1,0 +1,30 @@
+@import '../../shared/_colors';
+header{
+    background: $orange;
+}
+nav{
+    width: 90%;
+}
+.logo{
+    height: 32px;
+    width: 90px;
+}
+ul, li{
+    list-style: none;
+}
+li > a{
+    border-left: 1px solid $dark_orange;
+    height: 100%;
+    text-decoration: none;
+    color: $white;
+    padding: 15px;
+}
+li:last-child > a{
+    border-right: 1px solid $dark_orange;
+} 
+a:hover{
+    background: $dark_orange;    
+}
+.navbar-container{
+    width: 90%;  
+}

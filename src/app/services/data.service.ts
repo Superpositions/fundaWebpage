@@ -22,5 +22,5 @@ export class DataService {
       .get(CONSTANTS.BASE_URL + CONSTANTS.APIKEY + '/koop/' + CONSTANTS.DEMO_ID)
       .map(res => res.json())
       .catch(err => this._serverError(err));
-  } 
+  }
 }
