@@ -1,0 +1,7 @@
+<div class="errorMessage" *ngIf="errorMessage">
+  {{errorMessage}}
+</div>
+
+<p *ngIf="!errorMessage">
+  {{propertyDetails | json}}
+</p>
