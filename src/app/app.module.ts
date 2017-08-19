@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { DetailsViewComponent } from './views/details-view/details-view.component';
 import { DataService } from './services/data.service';
 import { HeaderComponent } from './components/header/header.component';
+import { DetailsHeaderComponent } from './components/details-header/details-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DetailsViewComponent,
-    HeaderComponent
+    HeaderComponent,
+    DetailsHeaderComponent
   ],
   imports: [
     BrowserModule,

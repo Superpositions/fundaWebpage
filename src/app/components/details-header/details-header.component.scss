@@ -1,0 +1,13 @@
+@import '../../shared/_colors';
+header{
+    padding: 1em;
+}
+.streetName{
+    line-height: 1.4em;
+    font-size: 1.4em;
+}
+.placeName{  
+    line-height: 1em;    
+    font-size: 0.8em;    
+    color: rgba(0, 0, 0, 0.7);
+}

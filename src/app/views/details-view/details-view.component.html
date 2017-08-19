@@ -1,7 +1,10 @@
+<div *ngIf="!errorMessage">
+  <app-details-header [streetName]="propertyDetails?.Adres"
+                      [postalNumber]="propertyDetails?.Postcode"
+                      [place]="propertyDetails?.Plaats"></app-details-header>
+  <!-- {{propertyDetails | json}} -->
+</div>
+
 <div class="errorMessage" *ngIf="errorMessage">
   {{errorMessage}}
 </div>
-
-<p *ngIf="!errorMessage">
-  {{propertyDetails | json}}
-</p>
