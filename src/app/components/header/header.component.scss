@@ -9,22 +9,36 @@ nav{
     height: 32px;
     width: 90px;
 }
-ul, li{
-    list-style: none;
+ul{
+    list-style: none;  
+    padding: 0;
+    margin: 0; 
 }
-li > a{
-    border-left: 1px solid $dark_orange;
-    height: 100%;
-    text-decoration: none;
-    color: $white;
-    padding: 0.9em;
+.desktop-view{
+    li{
+        border-left: 1px solid $dark_orange;
+    }        
+    li:last-child{
+        border-right: 1px solid $dark_orange;
+    }
 }
-li:last-child > a{
-    border-right: 1px solid $dark_orange;
-} 
-a:hover{
+.mobile-view{
+    li{
+        border-top: 1px solid $dark_orange;
+    }        
+}
+li{
+  a{
+      text-decoration: none;
+      color: $white;
+  }
+    padding: 12px;
+}
+li:hover{
     background: $dark_orange;    
 }
-.navbar-container{
-    width: 90%;  
+.menu-icon{
+    padding: 0.9em;
+    color: $white;
+    cursor: pointer;
 }
