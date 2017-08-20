@@ -1,12 +1,9 @@
 <div *ngIf="!errorMessage">
   <app-details-header [streetName]="propertyDetails?.Adres" [postalNumber]="propertyDetails?.Postcode" [place]="propertyDetails?.Plaats"
-    [price]="propertyDetails?.KoopPrijs" [priceAbbrivation]="propertyDetails?.Prijs.KoopAbbreviation"></app-details-header>
+    [price]="propertyDetails?.KoopPrijs" [priceAbbrivation]="propertyDetails?.Prijs.KoopAbbreviation">
+  </app-details-header>
   <app-carousel [media]="mediaMedium"></app-carousel>
+  <app-gmap [lat]="lat" [lng]="lng"></app-gmap>
 </div>
 
-<app-gmap [lat]="lat" [lng]="lng"></app-gmap>
-
-<div class="errorMessage" *ngIf="errorMessage">
-  {{errorMessage}}
-</div>
-
+<app-error-message [errorMessage]="errorMessage"></app-error-message>

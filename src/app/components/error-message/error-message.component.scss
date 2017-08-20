@@ -1,0 +1,18 @@
+@import '../../shared/_colors';
+.error-container{
+    pointer-events: none;
+    padding: 4%;
+    background: $light_red;
+    margin-top: 20%;
+    border: 1px solid $red;
+    margin:10%;
+}
+.error-icon{
+    color: $red;
+    margin-right: 14px;
+    font-size: 42px;
+}
+.error-message{
+    font-size: 1.2em;
+    color: $red;
+}
