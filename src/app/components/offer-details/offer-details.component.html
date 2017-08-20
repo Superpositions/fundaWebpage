@@ -1,3 +1,7 @@
-<p>
-  offer-details works!
-</p>
+<section *ngFor="let data of details" class="list"> 
+  <header class="list-item-ttile">{{data.Titel}}</header>
+  <div *ngFor="let item of data.Kenmerken" fxLayout="row" fxLayoutAlign="space-between" class="list-item">
+    <div> {{item.Naam}}</div>
+    <div [innerHTML]="item.Waarde"></div>
+  </div>
+</section>
