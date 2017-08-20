@@ -16,6 +16,7 @@ import { AgmCoreModule } from '@agm/core';
 import { CONSTANTS } from '../environments/constants';
 import { GmapComponent } from './components/gmap/gmap.component';
 import { ErrorMessageComponent } from './components/error-message/error-message.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ErrorMessageComponent } from './components/error-message/error-message.
     DetailsHeaderComponent,
     CarouselComponent,
     GmapComponent,
-    ErrorMessageComponent
+    ErrorMessageComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

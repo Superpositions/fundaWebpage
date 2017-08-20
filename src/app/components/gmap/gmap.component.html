@@ -1,3 +1,8 @@
-<agm-map [latitude]="lat" [longitude]="lng">
-    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+<!-- 
+    I have set the zoom for better location view, 
+    set the title as street name 
+    and changed marker icon 
+//-->
+<agm-map [zoom]="14" [latitude]="lat" [longitude]="lng">
+    <agm-marker [iconUrl]="iconUrl" [title]="markerTitle" [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
