@@ -1,7 +1,7 @@
 <section *ngFor="let data of details" class="list"> 
   <header class="list-item-ttile">{{data.Titel}}</header>
-  <div *ngFor="let item of data.Kenmerken" fxLayout="row" fxLayoutAlign="space-between" class="list-item">
-    <div> {{item.Naam}}</div>
+  <div *ngFor="let item of data.Kenmerken" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" class="list-item">
+    <div class="list-sub-title"> {{item.Naam}}</div>
     <div [innerHTML]="item.Waarde"></div>
   </div>
 </section>

@@ -24,16 +24,16 @@ export class DetailsViewComponent implements OnInit {
         this.lng = details.WGS84_X;
         this.lat = details.WGS84_Y;
         this.propertyDetails.Media.map(item => {
-          if(item.MediaItems[item.MediaItems.length-2]){
+          if (item.MediaItems[item.MediaItems.length - 2]) {
             // Collect medium size images for displaying in carousel
-            this.mediaMediumImages.push(item.MediaItems[item.MediaItems.length-2].Url);
+            this.mediaMediumImages.push(item.MediaItems[item.MediaItems.length - 2].Url);
           }
           // colleting largest images
-          if(item.MediaItems[item.MediaItems.length-1]){
-            this.mediaLargeImages.push(item.MediaItems[item.MediaItems.length-1].Url);            
+          if (item.MediaItems[item.MediaItems.length - 1]) {
+            this.mediaLargeImages.push(item.MediaItems[item.MediaItems.length - 1].Url);
           }
         });
-        
+
       },
       error => {
         // Displaying Error to user, improving UX

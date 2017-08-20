@@ -1,8 +1,14 @@
-<section class="section-container" fxLayout fxLayoutAlign="center center">
-  <p [ngClass]="{'truncate': isTextClosed}">
-    {{text}}
-  </p>
-  <div (click)="isTextClosed=!isTextClosed">
-    <i [ngClass]="{'rotated': !isTextClosed}" class="material-icons expand_icon">expand_more</i>
+<section class="section-container" fxLayout="column" fxLayoutAlign="center center">
+  <header>
+    <h3>Omschrijving</h3>
+  </header>
+
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+    <p [ngClass]="{'truncate': isTextClosed}">
+      {{text}}
+    </p>
+    <div (click)="isTextClosed=!isTextClosed">
+      <i [ngClass]="{'rotated': !isTextClosed}" class="material-icons expand_icon">expand_more</i>
+    </div>
   </div>
 </section>

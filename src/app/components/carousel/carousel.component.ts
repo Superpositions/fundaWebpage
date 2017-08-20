@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
-  @Input() media;  
+  @Input() media;
   // confing for swiper
   config: any = {
     pagination: '.swiper-pagination',

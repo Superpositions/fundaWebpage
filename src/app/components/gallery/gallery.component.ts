@@ -14,10 +14,6 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
   }
 
-  openPhotoLibrary(){
-    debugger
-  }
-
   modalClosed() {
     this.isModalActive = false;
   }

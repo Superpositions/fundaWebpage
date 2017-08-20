@@ -6,6 +6,7 @@
         [price]="propertyDetails?.KoopPrijs" [priceAbbrivation]="propertyDetails?.Prijs.KoopAbbreviation">
       </app-details-header>
       </div>
+
       <!-- Carousel for mobile view -->
       <app-carousel fxHide.xs="false" fxHide.sm="false" fxHide="true" [media]="mediaMediumImages"></app-carousel>
       
@@ -15,8 +16,8 @@
     <div fxLayout="row" fxLayoutAlign="center">
       <app-details-section fxLayout="row" fxFlex.xs="100" fxFlex="80" fxFlex.lg="70" fxFlex.xl="70" [text]="propertyDetails?.VolledigeOmschrijving"></app-details-section>
     </div>
-    <div fxLayout="row" fxLayoutAlign="center" fxFlex="80" fxFlex.lg="70" fxFlex.xl="70">
-        <app-offer-details [details]="propertyDetails?.Kenmerken" [shortDetails]="propertyDetails?.KenmerkenKort"></app-offer-details>
+    <div fxLayout="row" fxLayoutAlign="center">
+        <app-offer-details fxFlex="80" fxFlex.lg="70" fxFlex.xl="70" [details]="propertyDetails?.Kenmerken" [shortDetails]="propertyDetails?.KenmerkenKort"></app-offer-details>
     </div>
   </div>
   <app-gmap [markerTitle]="propertyDetails?.Adres" [iconUrl]="'assets/icons/marker.png'" [lat]="lat" [lng]="lng"></app-gmap>

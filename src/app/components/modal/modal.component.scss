@@ -9,7 +9,7 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: none;
     background-color: rgba(69, 69, 69, 0.85);
   }
   /* Modal Content */
@@ -18,7 +18,6 @@
     height: auto;
     background-color: $white;
     margin: auto;
-    padding: 20px;
     border: 1px solid #bcbcbc;
   }
   
@@ -28,6 +27,7 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    padding: 15px;
   }
   
   .close:hover,

@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class OfferDetailsComponent implements OnInit {
   @Input() shortDetails;
   @Input() details;
-  
+
   constructor() { }
 
   ngOnInit() {

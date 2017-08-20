@@ -1,10 +1,12 @@
-<swiper [config]="config">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let item of media">
-      <img [src]="item" alt="item">
+<div class="container-swiper">
+  <swiper [config]="config">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let item of media">
+        <img [src]="item" alt="item">
+      </div>
     </div>
-  </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</swiper>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </swiper>
+</div>
