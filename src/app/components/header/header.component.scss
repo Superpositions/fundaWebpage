@@ -49,3 +49,37 @@ li:hover{
     color: $white;
     cursor: pointer;
 }
+
+@media (min-width: 320px) {}
+
+@media (min-width: 481px) {}
+
+@media (min-width: 641px) {}
+
+@media (min-width: 961px) {.desktop-nav{
+    .desktop-nav{
+        width: 80%;
+            li{
+                padding: 12px;
+            }
+        }        
+    }
+}   
+
+@media (min-width: 1025px) {
+    .desktop-nav{
+        width: 70%;
+            li{
+                padding: 12px;
+            }
+    }        
+}
+
+@media (min-width: 1281px) {
+    .desktop-nav{
+        width: 70%;
+            li{
+                padding: 12px;
+        }
+    }        
+}

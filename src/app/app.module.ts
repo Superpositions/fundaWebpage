@@ -17,6 +17,8 @@ import { CONSTANTS } from '../environments/constants';
 import { GmapComponent } from './components/gmap/gmap.component';
 import { ErrorMessageComponent } from './components/error-message/error-message.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { DetailsSectionComponent } from './components/details-section/details-section.component';
+import { OfferDetailsComponent } from './components/offer-details/offer-details.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     CarouselComponent,
     GmapComponent,
     ErrorMessageComponent,
-    GalleryComponent
+    GalleryComponent,
+    DetailsSectionComponent,
+    OfferDetailsComponent
   ],
   imports: [
     BrowserModule,

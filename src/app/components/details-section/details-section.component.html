@@ -1,0 +1,8 @@
+<section class="section-container" fxLayout fxLayoutAlign="center center">
+  <p [ngClass]="{'truncate': isTextClosed}">
+    {{text}}
+  </p>
+  <div (click)="isTextClosed=!isTextClosed">
+    <i [ngClass]="{'rotated': !isTextClosed}" class="material-icons expand_icon">expand_more</i>
+  </div>
+</section>
