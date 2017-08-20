@@ -1,0 +1,8 @@
+<!-- The Modal -->
+<div class="modal" [style.display]="modalActive? 'block':'none'">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span (click)="onClose()" class="close">&times;</span>
+      <app-carousel [media]="dataToModal"></app-carousel>
+    </div>
+  </div>

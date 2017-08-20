@@ -19,6 +19,7 @@ import { ErrorMessageComponent } from './components/error-message/error-message.
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { DetailsSectionComponent } from './components/details-section/details-section.component';
 import { OfferDetailsComponent } from './components/offer-details/offer-details.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { OfferDetailsComponent } from './components/offer-details/offer-details.
     ErrorMessageComponent,
     GalleryComponent,
     DetailsSectionComponent,
-    OfferDetailsComponent
+    OfferDetailsComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

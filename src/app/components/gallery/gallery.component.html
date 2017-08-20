@@ -1,4 +1,4 @@
-<div fxLayout="row" fxLayoutAign="center strech" fxLayoutGap="5px">
+<div class="gallery" fxLayout="row" fxLayoutAign="center strech" fxLayoutGap="5px" (click)="isModalActive=!isModalActive">
   <div fxFlex="66">
     <img class="image" [src]="images[0]" alt="galleryIamge_1">
   </div>
@@ -30,8 +30,12 @@
 
   </div>
 </div>
-<div class="gallery-tray">
-  <div (click)="openPhotoLibrary()">
-    <i class="material-icons">photo_library</i>
+<div class="gallery-tray" fxLayout="row" fxLayoutAlign="start center" fxFlexOffset="15px">
+  <div (click)="isModalActive=!isModalActive" fxLayout="row" fxLayoutAlign="start center">
+    <i class="material-icons photo-gallery-icon">photo_library</i>
   </div>
 </div>
+
+ <!-- Modal window -->
+ <app-modal (closeModal)="modalClosed()" [dataToModal]="images" [modalActive]="isModalActive"></app-modal>
+ 
