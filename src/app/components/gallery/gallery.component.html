@@ -1,7 +1,9 @@
 <div class="gallery" fxLayout="row" fxLayoutAign="center strech" fxLayoutGap="5px" (click)="isModalActive=!isModalActive">
+  
   <div fxFlex="66" (click)="setSelectedImage(0)">
     <img class="image" [src]="images[0]" alt="galleryIamge_0">
   </div>
+
   <div fxFlex fxLayout="column" fxLayoutAlign="start end" fxLayoutGap="5px">
 
     <div fxFlex="50" (click)="setSelectedImage(1)">
@@ -29,7 +31,9 @@
     </div>
 
   </div>
+
 </div>
+
 <div class="gallery-tray" fxLayout="row" fxLayoutAlign="start center" fxFlexOffset="15px">
   <div (click)="isModalActive=!isModalActive" fxLayout="row" fxLayoutAlign="start center">
     <i class="material-icons photo-gallery-icon">photo_library</i>

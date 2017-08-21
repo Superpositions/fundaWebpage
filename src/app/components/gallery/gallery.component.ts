@@ -15,6 +15,7 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
   }
 
+  // set selected image for displaying porper image on modal open pass it via Input
   setSelectedImage(index){
     this.selectedImage = index;
   }
