@@ -1,8 +1,15 @@
 <!-- The Modal -->
 <div class="modal" [style.display]="modalActive? 'block':'none'">
+  <div class="modal-inner">
     <!-- Modal content -->
     <div class="modal-content">
       <span (click)="onClose()" class="close">&times;</span>
+      <!-- 
+        This component should be changed, 
+        I didn't had time to finish custom slideshow, 
+        that is something that I would do next. 
+      -->
       <app-carousel [media]="dataToModal"></app-carousel>
     </div>
   </div>
+</div>

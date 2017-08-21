@@ -1,24 +1,31 @@
 @import '../../shared/_colors';
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 99999; /* Sit on top */
-    padding-top: 10px; /* Location of the box */
-    left: 0;
+    position: fixed;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: none;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
     background-color: rgba(69, 69, 69, 0.85);
   }
-  /* Modal Content */
+  .modal-inner{
+    width: 80%;
+    margin: 0 auto;
+  }
   .modal-content {
-    width: 85%;
-    height: auto;
-    background-color: $white;
-    margin: auto;
-    border: 1px solid #bcbcbc;
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
   }
   
   /* The Close Button */
@@ -27,12 +34,19 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
-    padding: 15px;
+    padding: 0 15px;
   }
-  
+   .content{
+    text-align: center;
+    margin-top: 1%;
+    width: 100%;
+    border:1px solid red;
+   } 
+ 
   .close:hover,
   .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
   }
+ 
