@@ -1,0 +1,32 @@
+<!-- The Modal -->
+<div class="modal" [style.display]="modalActive? 'block':'none'">
+  <div class="modal-inner">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div fxLayout="column">
+
+        <div fxFlex="10" fxLayout fxLayoutAlign="end center">
+          <span (click)="onClose()" class="close">&times;</span>
+        </div>
+
+        <div fxFlex="80" fxFlex="row" fxLayoutAlign="center center">
+          <div fxFlex="10" fxLayoutAlign="center center">
+            <button (click)="prevImage()">
+              <i class="material-icons">keyboard_arrow_left</i>
+            </button>
+          </div>
+          <div fxFlex="80" fxLayoutAlign="center center">
+            <div class="image-container" *ngFor="let item of dataToModal; let i = index;">
+              <img *ngIf="i === this.current" class="img-slide"  [src]="item" alt="">
+            </div>
+          </div>
+          <div fxFlex="10" fxLayoutAlign="center center">
+            <button (click)="nextImage()">
+              <i class="material-icons">keyboard_arrow_right</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

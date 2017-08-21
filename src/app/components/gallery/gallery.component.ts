@@ -9,9 +9,14 @@ export class GalleryComponent implements OnInit {
   @Input() images;
   isModalActive: boolean;
   dataToModal: any;
+  selectedImage: any;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setSelectedImage(index){
+    this.selectedImage = index;
   }
 
   modalClosed() {

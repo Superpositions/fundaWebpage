@@ -19,7 +19,7 @@ import { ErrorMessageComponent } from './components/error-message/error-message.
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { DetailsSectionComponent } from './components/details-section/details-section.component';
 import { OfferDetailsComponent } from './components/offer-details/offer-details.component';
-import { ModalComponent } from './components/modal/modal.component';
+import { ModalGalleryComponent } from './components/modal-gallery/modal-gallery.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { ModalComponent } from './components/modal/modal.component';
     GalleryComponent,
     DetailsSectionComponent,
     OfferDetailsComponent,
-    ModalComponent
+    ModalGalleryComponent
   ],
   imports: [
     BrowserModule,

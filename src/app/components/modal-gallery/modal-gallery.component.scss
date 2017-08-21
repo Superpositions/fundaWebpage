@@ -15,7 +15,7 @@
   }
   .modal-inner{
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
   }
   .modal-content {
     position: relative;
@@ -50,3 +50,37 @@
     cursor: pointer;
   }
  
+.img-slide{
+  height: 480px;
+  width: auto;
+  user-select: none;
+}
+
+.image-container{
+  height: 480px;  
+  margin-bottom: 15px;
+}
+
+@media (min-width: 641px) {
+  .img-slide, .image-container{
+      height: 280px;
+  }    
+}
+
+@media (min-width: 961px) {
+  .img-slide, .image-container{
+      height: 360px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .img-slide, .image-container{
+      height: 480px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .img-slide, .image-container{
+      height: 580px;
+  }
+}

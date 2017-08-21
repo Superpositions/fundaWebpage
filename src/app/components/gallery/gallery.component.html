@@ -1,28 +1,28 @@
 <div class="gallery" fxLayout="row" fxLayoutAign="center strech" fxLayoutGap="5px" (click)="isModalActive=!isModalActive">
-  <div fxFlex="66">
-    <img class="image" [src]="images[0]" alt="galleryIamge_1">
+  <div fxFlex="66" (click)="setSelectedImage(0)">
+    <img class="image" [src]="images[0]" alt="galleryIamge_0">
   </div>
   <div fxFlex fxLayout="column" fxLayoutAlign="start end" fxLayoutGap="5px">
 
-    <div fxFlex="50">
-      <img class="image" [src]="images[1]" alt="galleryIamge_2">
+    <div fxFlex="50" (click)="setSelectedImage(1)">
+      <img class="image" [src]="images[1]" alt="galleryIamge_1">
     </div>
 
     <div fxFlex fxLayout="column">
       <div fxFlex fxLayout="row" fxLayoutAlign="space-between">
-        <div fxLayoutAlign="start center">
+        <div fxLayoutAlign="start center" (click)="setSelectedImage(2)">
           <img class="image img-small" [src]="images[2]" alt="galleryIamge_2">
         </div>
-        <div fxLayoutAlign="end center">
+        <div fxLayoutAlign="end center" (click)="setSelectedImage(3)">
           <img class="image img-small" [src]="images[3]" alt="galleryIamge_3">
         </div>
       </div>
 
       <div fxFlex fxLayout="row">
-        <div fxLayoutAlign="start center">
+        <div fxLayoutAlign="start center" (click)="setSelectedImage(4)">
           <img class="image img-small" [src]="images[4]" alt="galleryIamge_4">
         </div>
-        <div fxLayoutAlign="end center">
+        <div fxLayoutAlign="end center" (click)="setSelectedImage(5)">
           <img class="image img-small" [src]="images[5]" alt="galleryIamge_5">
         </div>
       </div>
@@ -37,5 +37,5 @@
 </div>
 
  <!-- Modal window -->
- <app-modal (closeModal)="modalClosed()" [dataToModal]="images" [modalActive]="isModalActive"></app-modal>
+ <app-modal-gallery [selectedImage]="selectedImage" (closeModal)="modalClosed()" [dataToModal]="images" [modalActive]="isModalActive"></app-modal-gallery>
  
