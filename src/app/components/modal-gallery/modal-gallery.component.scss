@@ -1,55 +1,65 @@
 @import '../../shared/_colors';
 
 .modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1050;
-    display: none;
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
-    outline: 0;
-    background-color: rgba(69, 69, 69, 0.85);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  background-color: rgba(69, 69, 69, 0.85);
+}
+.modal-inner{
+  width: 80%;
+  margin: 50px auto;
+}
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+  outline: 0;
+}
+.gallery-button{
+  border: none;
+  background: none;
+  outline: none;
+  i{
+    color: $blue;
+    font-size: 40px;
+    user-select: none;
   }
-  .modal-inner{
-    width: 80%;
-    margin: 50px auto;
-  }
-  .modal-content {
-    position: relative;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #999;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 6px;
-    outline: 0;
-  }
+}
   
-  /* The Close Button */
-  .close {
-    color: #bcbcbc;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 0 15px;
-  }
-   .content{
-    text-align: center;
-    margin-top: 1%;
-    width: 100%;
-    border:1px solid red;
-   } 
- 
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
- 
+/* The Close Button */
+.close {
+  color: #bcbcbc;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0 15px;
+}
+  .content{
+  text-align: center;
+  margin-top: 1%;
+  width: 100%;
+  border:1px solid red;
+  } 
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .img-slide{
   height: 480px;
   width: auto;
@@ -63,24 +73,24 @@
 
 @media (min-width: 641px) {
   .img-slide, .image-container{
-      height: 280px;
+    height: 280px;
   }    
 }
 
 @media (min-width: 961px) {
   .img-slide, .image-container{
-      height: 360px;
+    height: 360px;
   }
 }
 
 @media (min-width: 1025px) {
   .img-slide, .image-container{
-      height: 480px;
+    height: 480px;
   }
 }
 
 @media (min-width: 1281px) {
   .img-slide, .image-container{
-      height: 580px;
+    height: 580px;
   }
 }
