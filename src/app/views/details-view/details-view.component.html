@@ -21,8 +21,12 @@
     </div>
   </div>
   <app-gmap [markerTitle]="propertyDetails?.Adres" [iconUrl]="'assets/icons/marker.png'" [lat]="lat" [lng]="lng"></app-gmap>
-
 </div>
 
 <app-error-message [errorMessage]="errorMessage"></app-error-message>
 
+<footer fxLayout="column" fxLayoutAlign="space-between center">
+    <p>Implemented by: Milan Janjevic</p>
+    <p>Contact information: <a href="mailto:someone@example.com">
+    milanjanjevic@gmail.com</a>.</p>
+</footer>
